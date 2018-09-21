@@ -17,7 +17,10 @@ public class yl1 {
                     tulemus = suurus - 1 - v;
                 }
                 // veeru numbri väljastamine
-                System.out.print(tulemus + " ");
+                // System.out.print(tulemus + " "); // üks võimalustest
+
+                // elemendi väljastamine
+                System.out.format("%d", tulemus); // veel üks võimalustest
             }
             // reavahetus
             System.out.println();
