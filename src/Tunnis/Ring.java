@@ -42,9 +42,9 @@ public class Ring {
         // kahe ringi keskpunkti vahekaugus
         double vahekaugus = Math.sqrt(Math.pow(this.x - teineRing.x, 2) + Math.pow(this.y - teineRing.y, 2));
         if(vahekaugus == (this.raadius + teineRing.raadius)){
-            System.out.println("Ringidel on 1 kokkupuude punkt");
+            System.out.println("Ringidel on 1 kokkupuute punkt");
         } else if(vahekaugus < (this.raadius + teineRing.raadius)){
-            System.out.println("Ringidel on 2 kokkupuude punkti");
+            System.out.println("Ringidel on 2 kokkupuute punkti");
         } else {
             System.out.println("Ringid ei puutu kokku");
         }
