@@ -20,7 +20,9 @@ public class yl1 {
                 // System.out.print(tulemus + " "); // üks võimalustest
 
                 // elemendi väljastamine
-                System.out.format("%d", tulemus); // veel üks võimalustest
+                System.out.format("%2d", tulemus); // veel üks võimalustest
+                // System.out.format("%2d", suurus - 1 - (r > v ? r : v)); // veel üks võimalus
+                // System.out.format("%2d", suurus - 1 - Math.max(r, v)); // veel üks võimalus
             }
             // reavahetus
             System.out.println();
