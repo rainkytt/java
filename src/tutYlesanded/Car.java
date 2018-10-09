@@ -1,5 +1,5 @@
 // Klassside näide, seotud klassiga Main
-package com.company;
+package tutYlesanded;
 
 public class Car {
 

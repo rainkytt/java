@@ -1,5 +1,5 @@
 // Klasside näide seotud klassiga Car
-package com.company;
+package tutYlesanded;
 
 public class Main {
 

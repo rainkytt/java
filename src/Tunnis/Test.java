@@ -1,4 +1,4 @@
-package com.second;
+package Tunnis;
 
 public class Test {
     public static void main(String[] args) {
