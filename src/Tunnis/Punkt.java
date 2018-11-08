@@ -17,12 +17,15 @@ public class Punkt {
         this.y = y;
         this.veerand = getVeerand();
     }
+
     public double getX() {
         return x;
     }
+
     public double getY() {
         return y;
     }
+
     public int getVeerand() {
         if (this.x > 0 & this.y > 0) veerand = 1;
         else if (this.x > 0 & this.y < 0) veerand = 2;
@@ -31,10 +34,11 @@ public class Punkt {
         else veerand = 0;
         return veerand;
     }
-        @Override
-        public String toString () {
-            return "x = " + x +
-                    ", y = " + y +
-                    ", veerand = " + veerand;
-        }
+
+    @Override
+    public String toString() {
+        return "x = " + x +
+                ", y = " + y +
+                ", veerand = " + veerand;
     }
+}
