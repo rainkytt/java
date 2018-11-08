@@ -1,23 +1,25 @@
 // ül 4 Athlete
-
-import Tunnis.Athlete;
+package Tunnis;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
-package Tunnis;
+import java.util.Scanner;
 
 public class Team {
     public static void main(String[] args) {
-        Athlete kristiina = new Athlete("Kristiina", 10.0);
-        Athlete andrus = new Athlete("Andrus", 12.0);
-        Athlete jaak = new Athlete("Jaak", 13.0);
-
         ArrayList<Athlete> athletes = new ArrayList<Athlete>();
+        Scanner inputName = new Scanner(System.in);
+        Scanner inputResult = new Scanner(System.in);
+        while (true) {
+            System.out.println("Sisesta sportlase nimi: ");
+            String name = inputName.nextLine();
+            if (name.isEmpty()) break;
+            System.out.println("Sisesta sportlase tulemus: ");
+            Double result = inputResult.nextDouble();
+            athletes.add(new Athlete(name, result));
+        }
 
-        athletes.add(kristiina);
-        athletes.add(andrus);
-        athletes.add(jaak);
+        Collections.sort(athletes);
 
         for (Athlete athlete : athletes) {
             System.out.printf("%s\t\t%5.2f\n", athlete.getName(), athlete.getResult());

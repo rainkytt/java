@@ -4,7 +4,7 @@
 //ArrayList-i sorteerimiseks kasuta Collections.sort() meetodit.
 package Tunnis;
 
-public class Athlete {
+public class Athlete implements Comparable<Athlete> {
     private String name;
     private Double result;
 
@@ -19,5 +19,10 @@ public class Athlete {
 
     public Double getResult() {
         return result;
+    }
+
+    @Override
+    public int compareTo(Athlete other) {
+        return other.result.compareTo(this.result);
     }
 }
